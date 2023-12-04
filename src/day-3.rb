@@ -35,4 +35,4 @@ end
 
 puts find_parts(input).flatten.sum
 
-puts find_parts(input).select { _1.size == 2 }.map {|set| set.reduce(:*) }.sum
+puts find_parts(input, "*").select { _1.size == 2 }.map {|set| set.reduce(:*) }.sum
